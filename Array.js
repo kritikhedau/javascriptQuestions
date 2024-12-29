@@ -12,6 +12,19 @@ function checkElement(nestedArray) {
   return max; // Return the largest value found in the nested array-
 }
 
+function checkGreater(nestedArray) {
+  let max = nestedArray[0][0];
+  for (i = 0; i < nestedArray.length; i++) {
+    for (j = 0; j < nestedArray[i].length; j++) {
+      if (max < nestedArray[i][j]) {
+        max = nestedArray[i][j];
+      }
+    }
+  }
+  console.log(max);
+  return max
+}
+
 let nestedArray = [[1, 2, 4, 5, 8, 11, 1, 2, 3], [3, 4, 5], [6]];
 let arr = [1, 2, 4, 5, 8, 11, 1, 22, 3];
 
@@ -25,5 +38,7 @@ function checkGreatest(arr) {
   return max;
 }
 
-console.log(checkGreatest(arr));
-console.log(checkElement(nestedArray));
+console.log(checkGreater(nestedArray));
+
+// console.log(checkGreatest(arr));
+// console.log(checkElement(nestedArray));
