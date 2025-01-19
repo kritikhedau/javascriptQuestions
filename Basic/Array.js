@@ -1,3 +1,11 @@
+// 8. Write a JavaScript program to find the largest element in a nested array. 
+
+
+let nestedArray = [[1, 2, 4, 5, 8, 11, 1, 2, 3], [3, 4, 5], [6]];
+let arr = [1, 2, 4, 5, 8, 11, 1, 22, 3];
+
+
+
 function checkElement(nestedArray) {
   let max = nestedArray[0][0]; // Assume the first element of the first subarray is the largest
   for (let i = 0; i < nestedArray.length; i++) {
@@ -12,6 +20,9 @@ function checkElement(nestedArray) {
   return max; // Return the largest value found in the nested array-
 }
 
+// console.log(checkElement(nestedArray));
+
+
 function checkGreater(nestedArray) {
   let max = nestedArray[0][0];
   for (i = 0; i < nestedArray.length; i++) {
@@ -25,8 +36,6 @@ function checkGreater(nestedArray) {
   return max
 }
 
-let nestedArray = [[1, 2, 4, 5, 8, 11, 1, 2, 3], [3, 4, 5], [6]];
-let arr = [1, 2, 4, 5, 8, 11, 1, 22, 3];
 
 function checkGreatest(arr) {
   let max = arr[0];
@@ -41,4 +50,3 @@ function checkGreatest(arr) {
 console.log(checkGreater(nestedArray));
 
 // console.log(checkGreatest(arr));
-// console.log(checkElement(nestedArray));

@@ -1,6 +1,6 @@
 //2. Write a JavaScript program to find the maximum number in an array.
 
-var number = [11, 12, 3, 4, 5, 6, 7, 8, 9];
+// var arr = [18, 12, 3, 4, 5, 6, 7, 8, 9];
 // function maxNumber(arr) {
 //   let maxNum = arr[0];
 //   for (i = 1; i < arr.length; i++) {
@@ -25,12 +25,27 @@ var number = [11, 12, 3, 4, 5, 6, 7, 8, 9];
 // let maxNum = number[0];
 // number.forEach((element) => {
 //   if (element > maxNum) {
-//     maxNum = element
+//     maxNum = element;
 //   }
 // });
 
 // console.log(maxNum);
 
-let maxNum = number.slice()
+// let maxNum = number.slice();
 
-console.log(maxNum);
+var arr = [18, 12, 33, 4, 5, 6, 7, 8, 9];
+
+function maxNum(arr) {
+  let secondGreatest = -Infinity;
+  let greatest = -Infinity;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > greatest) {
+      // Update both greatest and second greatest
+      secondGreatest = greatest;
+      greatest = arr[i];
+  }
+  }
+  return greatest;
+}
+
+console.log(maxNum(arr));

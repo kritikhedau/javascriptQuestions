@@ -2,13 +2,9 @@
 
 var arr = [1, 2, 3, 4, 5, 6];
 
-function filterEvenNumbers(numbers) { 
-
-  // return numbers.filter(num => num % 2 === 0); 
-  return numbers.map(item=>{
-    return item % 2 === 0
-  })
-
+function filterEvenNumbers(numbers) {
+  return numbers.filter(num => num % 2 === 0);
+  // return numbers.map((item) => item % 2 === 0);
 }
 
 console.log(filterEvenNumbers(arr));
