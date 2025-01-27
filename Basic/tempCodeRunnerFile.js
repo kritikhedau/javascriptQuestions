@@ -1,1 +1,3 @@
-max
+  // if (str === "") {
+  //   return "";
+  // } else

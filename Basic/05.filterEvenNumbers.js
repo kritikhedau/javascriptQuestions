@@ -7,4 +7,14 @@ function filterEvenNumbers(numbers) {
   // return numbers.map((item) => item % 2 === 0);
 }
 
+// function filterEvenNumbers(arr) {
+//   const evenNumber = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] % 2 === 0) {
+//       evenNumber.push(arr[i]);
+//     }
+//   }
+//   return evenNumber;
+// }
+
 console.log(filterEvenNumbers(arr));
